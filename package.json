@@ -1,0 +1,46 @@
+{
+  "name": "dsh-rex-context",
+  "version": "0.2.0",
+  "description": "Rex terminal context for dsh agents: a live-fetched SessionStart-style system prompt section that follows Rex upgrades",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "rex",
+    "terminal",
+    "system-prompt"
+  ],
+  "author": "soimy",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soimy/dsh-rex-context.git"
+  },
+  "bugs": {
+    "url": "https://github.com/soimy/dsh-rex-context/issues"
+  },
+  "homepage": "https://github.com/soimy/dsh-rex-context#readme",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

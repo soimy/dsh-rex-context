@@ -1,0 +1,5 @@
+# Mount this bundle's own row. `dsh plugin --profile <profile> add <pkg>`
+# installs the package and appends the bundle name to the profile manifest.
+- insert:
+    - id: rex-context
+      name: 'dsh-rex-context'
